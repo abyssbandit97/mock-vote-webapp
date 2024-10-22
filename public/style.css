@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('american-flag.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.candidates {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.candidate {
+    text-align: center;
+}
+
+.candidate img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #444;
+}
+
+.vote-btn {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.free-vote {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.paid-vote {
+    background-color: #008CBA;
+    color: white;
+}
+
+.vote-btn:hover {
+    opacity: 0.8;
+}
+
+#results {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.message.success {
+    background-color: #4CAF50;
+}
+
+.message.error {
+    background-color: #f44336;
+}
+
+#card-element {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#card-element:focus {
+    border-color: #008CBA;
+    box-shadow: 0 2px 5px rgba(0, 140, 186, 0.5);
+}
+
+.StripeElement {
+    padding: 10px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+    background-color: #45a049;
+}
