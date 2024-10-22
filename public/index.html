@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Voter's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Voter's Website</h1>
+        <div class="candidates">
+            <div class="candidate">
+                <img src="plump.png" alt="Plump">
+                <h2>Plump</h2>
+                <button class="vote-btn free-vote" data-candidate="Plump">Free Vote</button>
+                <button class="vote-btn paid-vote" data-candidate="Plump">Paid Vote ($1)</button>
+            </div>
+            <div class="candidate">
+                <img src="parris.png" alt="Parris">
+                <h2>Parris</h2>
+                <button class="vote-btn free-vote" data-candidate="Parris">Free Vote</button>
+                <button class="vote-btn paid-vote" data-candidate="Parris">Paid Vote ($1)</button>
+            </div>
+        </div>
+        <div class="payment-form">
+            <div id="card-element">
+                <!-- Stripe Elements will insert the card input field here -->
+            </div>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+</body>
+</html>
