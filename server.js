@@ -5,7 +5,6 @@ dotenv.config();
 const path = require('path');
 const voteRoutes = require('./routes/voteRoutes');
 
-
 const app = express();
 
 // Connect to MongoDB
